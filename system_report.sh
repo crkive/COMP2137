@@ -6,7 +6,7 @@ today=$(date +"%Y-%m-%d %H:%M:%S")                   #   To get the current date
 # GATHERED SYSTEM INFORMATION
 hostname=$(hostname)  # To get the system's hostname
 uptime=$(uptime -p) # To see how long the system has been running for
-os=$(source /etc/os-release && echo $PRETTY_NAME) # to get OS information and store a PRETTY_NAME
+os=$(source /etc/os-release && echo $PRETTY_NAME) # to get OS information and store PRETTY_NAME
 
 # GATHERED HARDWARE INFORMATION
 cpu=$(sudo lshw -class processor | grep "product" | head -1) # Using 'lshw' to get CPU information and 'grep' as a filter for the product name
